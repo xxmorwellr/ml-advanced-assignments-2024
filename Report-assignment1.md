@@ -34,10 +34,10 @@ To run *eval.py*, type the following command:
 ```bash
 python eval.py
 ```
-Here test_dataset is read using the same *batch_size*.
+Here `test_dataset` is read using the same *batch_size* with `train_dataset` and `val_dataset`.
 
 ## Experiment Analysis
-Take the first condition as an example, run the following commands in sequence:
+Take the first experiment as an example, run the following commands in sequence:
 ```bash
  python dataloader.py Thai 200 normal 200 normal
  python train.py
