@@ -69,4 +69,6 @@ From the results, I can infer that:
   
   I initially wanted to make `batch_size` adjustable as well, but even if I declared it as *global*, cross-file variable calling was tricky.
 
+  In regard to other shared variable like `num_classes`, I solved the issue by saving and reloading `label_mapping`.
+
 
