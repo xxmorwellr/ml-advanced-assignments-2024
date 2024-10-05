@@ -9,7 +9,8 @@ from train import load_label_mapping
 
 
 ## For new testing datasets with brand different structures, try to combine OpenCV to preprocess images
-# BW vs. Gray BW datasets has been binarized, while Gray datasets not
+# not a complete script, try to construct an analysis logic and list obstacles
+# BW vs. Gray: BW datasets has been binarized, while Gray datasets not
 
 def load_model(model_path, num_classes, device):
     model = ThaiCharCNN(num_classes)
