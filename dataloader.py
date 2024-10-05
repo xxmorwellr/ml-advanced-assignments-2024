@@ -128,8 +128,8 @@ def main():
     test_font_style = args.test_font_style
 
     # 2. Create dataset and dataloader
-    # trainingdir = "/scratch/lt2326-2926-h24/ThaiOCR/ThaiOCR-TrainigSet/Thai"
-    trainingdir = "ThaiOCR-TrainigSet"
+    trainingdir = "/scratch/lt2326-2926-h24/ThaiOCR/ThaiOCR-TrainigSet/Thai"
+    # trainingdir = "ThaiOCR-TrainigSet"
     # data pre-processing
     transform = transforms.Compose([
         transforms.Resize((64, 64)),  # resize all images to 64x64
