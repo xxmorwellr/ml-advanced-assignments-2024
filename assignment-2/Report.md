@@ -12,7 +12,7 @@ For Bonus A and Part 1, I followed the previous structure.
 *cluster_plot_n_10.png* - clustering result with n_cluster = 10  
 
 *part_3.py* - for Part 3  
-*contrast_image_0.png* - restructed one image with five different styles
+*contrast_image_0.png* - restructed one image with five different styles  
 *contrast_image_1.png* - restructed five images with five different styles
 
 *bonus.py* - for Bonus B  
@@ -46,7 +46,7 @@ For example, in train set we exactly have one artwork with three variants: origi
 I created a new train script for this part. You can see class `Autoencoder` in *part_2.py*, that produces compressed representations of each image in the dataset. I designed *3* convolution layers in my model and chose *MSELoss* to train it.  
 Compared to *CrossEntropyLoss*, which is more suitable for classification problems, MSE Loss can help the model accurately restore or compress images at the pixel level, especially in image generation tasks.
 
-For visualizing the clustering result, I utilized *PCA* dimensionality-reduced method. I tried default `n_clusters` setting that equals to the number of art types (=27) initially, but the clustering effect seemed not good. When I tried `n_cluster` with 10, the visualization output seemed better. 
+For visualizing the clustering result, I utilized *PCA* dimensionality-reduced method. I tried default `n_clusters` setting that equals to the number of art types (27) initially, but the clustering effect seemed not good. When I tried `n_cluster` with 10, the visualization output seemed better. 
 
 
 ## Part 3 - Generation/style transfer
