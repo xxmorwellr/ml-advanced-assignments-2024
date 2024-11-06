@@ -12,8 +12,8 @@ For Bonus A and Part 1, I followed the previous structure.
 *cluster_plot_n_10.png* - clustering result with n_cluster = 10  
 
 *part_3.py* - for Part 3  
-*contrast_image_0.png* - restructed one image with five different styles  
-*contrast_image_1.png* - restructed five images with five different styles
+*contrast_image_0.png* - reconstructed one image with five different styles  
+*contrast_image_1.png* - reconstructed five images with five different styles
 
 *bonus.py* - for Bonus B  
 *prompted_style_image.png* - generated image with prompted style  
@@ -52,7 +52,7 @@ For visualizing the clustering result, I utilized *PCA* dimensionality-reduced m
 ## Part 3 - Generation/style transfer
 I extended the autoencoder with `style_embedding` in encoder module. You can see class `ConditionalAutoencoder` in *part_3.py*.
 
-I tried to restructed one same image with five different styles and restructed five images with five different styles. From the output, I could say the style embedding exactly affected generated effect. And when I increased the `style_embedding_dim` and training epochs, the reconstructed output could be better.
+I tried to reconstructed one same image with five different styles and reconstructed five images with five different styles. From the output, I could say the style embedding exactly affected generated effect. And when I increased the `style_embedding_dim` and training epochs, the reconstructed output could be better.
 
 
 ## Bonus B
