@@ -50,7 +50,7 @@ def train(epochs=3, batch_size=32, modelfile=None, device="cpu"):
         print("Starting epoch {}".format(epoch))
         accumulate_loss = 0
         for batch_id, batch in enumerate(tqdm.tqdm(loader)):
-            X, y = batch
+            X, y, _ = batch
             y = y.to(device)
             optimizer.zero_grad()
             output = model(X)
