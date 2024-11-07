@@ -40,7 +40,7 @@ def test(modelfile=None, device="cpu"):
     predictions = []
     truth = []
     for batch_id, batch in enumerate(tqdm.tqdm(loader)):
-        X, y = batch
+        X, y, _ = batch
         y = y.to(device)
         output = model(X)
         predictions.append(torch.argmax(output).unsqueeze(dim=0))
