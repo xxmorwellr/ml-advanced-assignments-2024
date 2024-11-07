@@ -96,7 +96,7 @@ class WikiArtDataset(Dataset):
         ilabel = self.classes.index(imgobj.label)
         image = imgobj.get().to(self.device)
 
-        return image, ilabel, imgobj.label 
+        return image, ilabel, imgobj.label # for bonus part, we need original text labels
 
 class WikiArtModel(nn.Module):
     def __init__(self, num_classes=27):
